@@ -8,6 +8,7 @@ module.exports = {
         filename: 'js/bundle.js'
     },
     devServer: {
+        open: true,
         contentBase: './dist',
     },
     plugins: [
