@@ -15,7 +15,7 @@ import { elements, renderLoader, clearLoader } from'./views/base';
 // liked recipes
 
 const state = {};
-window.state = state;
+
 
 const controlSearch = async () => {
     // 1) get query from view
@@ -65,7 +65,6 @@ elements.searchResPages.addEventListener('click', e => {
 const controlRecipe = async () => {
     // Get ID from url
     const id = window.location.hash.replace('#', '')
-    console.log(id);
 
     if (id) {
         // Prepare UI for changes
